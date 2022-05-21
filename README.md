@@ -27,11 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot](https://user-images.githubusercontent.com/13813853/169671709-6211383c-8c25-4c64-9f89-9bf4c9981c6f.png)
+
+
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Rest Countries](https://rest-countries-ikukuler.vercel.app)
 
 ## My process
 
