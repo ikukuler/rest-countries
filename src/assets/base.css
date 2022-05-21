@@ -1,0 +1,150 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+html.dark {
+	color-scheme: dark;
+	--color-background: var(--vt-c-black);
+	--color-background-soft: var(--vt-c-black-soft);
+	--color-background-mute: var(--vt-c-black-mute);
+
+	--color-border: var(--vt-c-divider-dark-2);
+	--color-border-hover: var(--vt-c-divider-dark-1);
+
+	--color-heading: var(--vt-c-text-dark-1);
+	--color-text: var(--vt-c-text-dark-2);
+	--el-text-color-primary: var(--vt-c-text-dark-2);
+	--el-button-bg-color: var(--vt-c-black-soft);
+	--el-bg-color-overlay:var(--vt-c-black-soft);
+	--el-backtop-hover-bg-color: var(--vt-c-black-mute);
+}
+
+html.dark .el-card {
+	--el-card-border-color: var(--vt-c-divider-dark-2);
+    --el-card-bg-color: var(--vt-c-black);
+}
+
+html.dark .el-button {
+	--el-button-bg-color: var(--vt-c-black-soft);
+	--el-button-border-color: var(--vt-c-divider-dark-2);
+}
+
+html.dark .el-button:hover,
+html.dark .el-button:focus,
+html.dark .el-button:active {
+	--el-button-hover-bg-color: var(--vt-c-black-mute);
+	--el-button-hover-border-color: var(--vt-c-divider-dark-1);
+	--el-button-hover-text-color: var(--vt-c-text-dark-1);
+}
+
+html.dark .el-input__wrapper {
+	--el-input-bg-color: var(--vt-c-black-soft);
+	--el-input-border-color: var(--vt-c-divider-dark-2);
+}
+
+html.dark .el-cascader__dropdown.el-popper[role=tooltip] {
+	--el-cascader-menu-fill: var(--vt-c-black-mute);
+}
+
+html.dark .el-backtop {
+	--el-backtop-hover-bg-color: var(--vt-c-black-mute);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 600;
+}
+h4 a {
+	color: inherit;
+	text-decoration: none;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.img-wrapper {
+	object-fit: cover;
+	height: 220px;
+	overflow: hidden;
+}
+
+.img-wrapper img {
+	width: 100%;
+	border: 1px solid #e4e7ed;
+}
