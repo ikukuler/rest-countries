@@ -17,7 +17,7 @@ import { defineComponent } from "vue";
 import { useCountriesStore } from "@/stores/countries";
 import { useRouter } from "vue-router";
 
-export default {
+export default defineComponent({
 	setup() {
 		const store = useCountriesStore();
 		const router = useRouter();
@@ -33,7 +33,7 @@ export default {
 			toggleTheme,
 		};
 	},
-};
+});
 </script>
 
 <style lang="scss" scoped>

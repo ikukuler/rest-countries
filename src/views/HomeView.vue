@@ -61,13 +61,13 @@
 </template>
 
 <script lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { defineComponent, computed, onMounted, ref } from "vue";
 import _ from "lodash";
 import type Country from "@/types/Country";
 import { useCountriesStore } from "@/stores/countries";
 import CountryItem from "@/components/CountryItem.vue";
 
-export default {
+export default defineComponent({
 	components: {
 		CountryItem,
 	},
@@ -111,5 +111,5 @@ export default {
 			cascaderProps,
 		};
 	},
-};
+});
 </script>
