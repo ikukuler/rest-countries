@@ -14,7 +14,7 @@ app.use(createPinia());
 app.use(router);
 app.use(ElementPlus);
 _.forEach(ElementPlusIconsVue, (component, key) => {
-	app.component(key, component);
+    app.component(key, component);
 });
 
 app.mount("#app");

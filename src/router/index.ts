@@ -8,7 +8,7 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
-	  strict: true,
+      strict: true,
     },
     {
       path: "/country/:id",
